@@ -1,7 +1,12 @@
 package com.automation;
 
+import java.time.Duration;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.automation.pages.HomePage;
 import com.automation.pages.ILogin;
@@ -29,6 +34,9 @@ public class DemoWebShopTest extends BaseTest{
         Assertions.assertEquals("Demo Web Shop", landingPage.getPageTitle());
         landingPage.clickLoginLink();
 
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(By.className("login-button")));
+        
         loginPage = new LoginPage(driver);
         Assertions.assertEquals("Demo Web Shop. Login", loginPage.getPageTitle());
         loginPage.enterEmail(loginData.getEmail());
