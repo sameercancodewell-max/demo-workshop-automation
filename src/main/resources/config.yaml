@@ -1,0 +1,19 @@
+QA:
+  browser: CHROME
+  baseUrl: "http://demowebshop.tricentis.com"
+  admin:
+    email: admin@qa.com
+    password: adminpass
+  user:
+    email: namefirst.namelast@gmail.com
+    password: namefirst
+
+UAT:
+  browser: CHROME
+  baseUrl: "http://uat.demowebshop.tricentis.com"
+  admin:
+    email: admin@uat.com
+    password: uatadminpass
+  user:
+    email: user@uat.com
+    password: uatuserpass

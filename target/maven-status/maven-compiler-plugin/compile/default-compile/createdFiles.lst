@@ -1,0 +1,8 @@
+com\automation\corejava\CoreJavaConcepts.class
+com\automation\pages\HomePage.class
+com\automation\App.class
+com\automation\pages\LoginPage.class
+com\automation\pages\BasePage.class
+com\automation\pages\LandingPage.class
+com\automation\pages\ILogin.class
+com\automation\util\YamlConfigReader.class
